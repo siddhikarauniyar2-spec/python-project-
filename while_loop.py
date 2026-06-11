@@ -7,7 +7,7 @@ while True:
     print('you are an adult')
  elif age >=60:
     print('you are a senior citizen')    
- user_input = input('do you want to continue?')
+ user_input = input('do you want to continue?').lower()
  if user_input == 'no':
      break
  
@@ -92,6 +92,9 @@ while True:
     if answer.lower() == "exit":
         print("Quiz ended.")
         break
+    if not answer.isdigit():
+     print('invalid. please enter a number')
+     continue
 
     if int(answer) == num1 * num2:
         print("Correct")
@@ -132,7 +135,7 @@ while attempts > 0:
         if attempts>0:
             print(f'wrong guess. you have {attempts} left')
         else:
-            print('out of attempts the number was {num}')
+            print(f'out of attempts the number was {num}')
             
 #9
 current_floor = 1
@@ -158,7 +161,7 @@ while True:
     elif destination < current_floor:
         print(f'elevator is going down from {current_floor} to {destination}')
     else: 
-        print(f'you are already on floor{current_floor}')
+        print(f'you are already on floor {current_floor}')
         
     current_floor=destination
     
