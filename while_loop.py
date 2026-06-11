@@ -233,5 +233,5 @@ i = 0
 
 while i < len(number):
     if number[i] < 20:
-        print(number[i])
+        print(number[i]) 
     i += 1
