@@ -39,6 +39,6 @@ print (remove_chars("python",2))
 
 fruits = ["apple","banana","cherry","date","elderberry"]
 fruits.append("fig")
-fruits.remove("banana")
+fruits.pop(1)
 print (fruits)
 
