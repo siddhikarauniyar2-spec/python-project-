@@ -39,7 +39,7 @@ b = (1, 2, 3)
 
 # Question no 5
 
-  # " == " hecks whether values are equal.
+  # " == " checks whether values are equal.
   # " is " checks whether both variables refer to the same object in memory.
 
 a = [1, 2]
